@@ -19,22 +19,22 @@ public class Student extends Human{
     }
 
     public Student(String name, int age, double mark, boolean alive) {
-        setName(name);
-        setAge(age);
-        setAlive(alive);
-//        this.name = name;
-//        this.age = age;
+//        setName(name);
+//        setAge(age);
+//        setAlive(alive);
+        this.name = name;
+        this.age = age;
         this.mark = mark;
-//        this.alive = alive;
+        this.alive = alive;
     }
 
 
     public Student(Student student) {
 
-//        name = student.name;
-//        age = student.age;
+        name = student.name;
+        age = student.age;
         mark = student.mark;
-//        alive = student.alive;
+        alive = student.alive;
     }
 
 
@@ -57,13 +57,13 @@ public class Student extends Human{
 
 
     public String getInfo() {
-        return getName() + ": age " + getAge()
-                + ", mark = " + mark
-                + ", is alive = " + (isAlive() ? "yes" : "no");
-
-//        return name + ": age " + age
+//        return getName() + ": age " + getAge()
 //                + ", mark = " + mark
-//                + ", is alive = " + (alive ? "yes" : "no");
+//                + ", is alive = " + (isAlive() ? "yes" : "no");
+
+        return name + ": age " + age
+                + ", mark = " + mark
+                + ", is alive = " + (alive ? "yes" : "no");
 
     }
 }

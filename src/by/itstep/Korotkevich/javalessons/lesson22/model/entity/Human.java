@@ -1,10 +1,10 @@
 package by.itstep.Korotkevich.javalessons.lesson22.model.entity;
 
 public class Human {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
-    private boolean alive;
+    protected boolean alive;
 
     public Human() {
     }

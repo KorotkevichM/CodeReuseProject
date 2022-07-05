@@ -5,7 +5,7 @@ import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Loafer;
 import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Student;
 import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Worker;
 
-public class Task03 extends Human{
+public class Task03 {
     public static void main(String[] args) {
 //        Human human = new Human();
 //        human.getAge(20);
