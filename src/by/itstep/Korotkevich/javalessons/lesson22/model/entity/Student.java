@@ -10,26 +10,34 @@ public class Student extends Human{
     private double mark = 4;
 
 
-
     public Student() {
-//        name = "no name";
-//        age = 16;
+        super();
+
+        System.out.println("student default constr");
+
+        name = "no name";
+        age = 16;
         mark = 4;
-//        alive = true;
+        alive = true;
     }
 
     public Student(String name, int age, double mark, boolean alive) {
+        super(name, age, alive);
+        System.out.println("student full constructor");
+
 //        setName(name);
 //        setAge(age);
 //        setAlive(alive);
-        this.name = name;
-        this.age = age;
+
+//        this.name = name;
+//        this.age = age;
         this.mark = mark;
-        this.alive = alive;
+//        this.alive = alive;
     }
 
 
     public Student(Student student) {
+        super();
 
         name = student.name;
         age = student.age;
@@ -57,13 +65,19 @@ public class Student extends Human{
 
 
     public String getInfo() {
+
 //        return getName() + ": age " + getAge()
 //                + ", mark = " + mark
 //                + ", is alive = " + (isAlive() ? "yes" : "no");
 
-        return name + ": age " + age
-                + ", mark = " + mark
-                + ", is alive = " + (alive ? "yes" : "no");
+//        return "Student - "
+//                + name + ": age " + age
+//                + ", is alive = " + (alive ? "yes" : "no")
+//
+//                + ", mark = " + mark;
+
+        return "Student - " + super.getInfo()
+                + ", mark = " + mark;
 
     }
 }

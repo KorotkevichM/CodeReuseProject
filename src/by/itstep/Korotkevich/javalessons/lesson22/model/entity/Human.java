@@ -7,6 +7,7 @@ public class Human {
     protected boolean alive;
 
     public Human() {
+        System.out.println("human default constr");
     }
 
     public Human(String name, int age, boolean alive) {
@@ -14,6 +15,8 @@ public class Human {
         this.age = age;
         this.alive = alive;
     }
+
+
 
     public String getName() {
         return name;

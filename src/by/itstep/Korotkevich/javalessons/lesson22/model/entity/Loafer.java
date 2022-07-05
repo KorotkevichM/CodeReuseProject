@@ -9,13 +9,16 @@ public class Loafer extends Human{
     }
 
     public Loafer(String name, int age, double inactivityPeriod, boolean alive) {
+        super(name, age, alive);
+
 //        setName(name);
 //        setAge(age);
 //        setAlive(alive);
-        this.name = name;
-        this.age = age;
+
+//        this.name = name;
+//        this.age = age;
         this.inactivityPeriod = inactivityPeriod;
-        this.alive = alive;
+//        this.alive = alive;
     }
 
     public static double getAmount() {
@@ -42,8 +45,7 @@ public class Loafer extends Human{
 //                + ", period of inactivity = " + inactivityPeriod
 //                + ", is alive = " + (isAlive() ? "yes" : "no");
 
-        return "Loafer - " + name + ": age " + age
-                + ", period of inactivity = " + inactivityPeriod
-                + ", is alive = " + (alive ? "yes" : "no");
+        return "Loafer - " + super.getInfo()
+                + ", period of inactivity = " + inactivityPeriod;
     }
 }

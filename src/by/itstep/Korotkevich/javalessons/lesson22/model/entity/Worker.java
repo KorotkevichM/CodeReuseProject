@@ -10,13 +10,16 @@ public class Worker extends Human{
     }
 
     public Worker(String name, int age, double salary, boolean alive) {
+        super(name, age, alive);
+
 //        setName(name);
 //        setAge(age);
 //        setAlive(alive);
-        this.name = name;
-        this.age = age;
+
+//        this.name = name;
+//        this.age = age;
         this.salary = salary;
-        this.alive = alive;
+//        this.alive = alive;
     }
 
 
@@ -36,9 +39,8 @@ public class Worker extends Human{
 //                + ", salary = " + salary
 //                + ", is alive = " + (isAlive() ? "yes" : "no");
 
-        return "Worker - " + name + ": age " + age
-                + ", salary = " + salary
-                + ", is alive = " + (alive ? "yes" : "no");
+        return "Worker - " + super.getInfo()
+                + ", salary = " + salary;
 
     }
 }

@@ -1,6 +1,5 @@
 package by.itstep.Korotkevich.javalessons.lesson22.controller;
 
-import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Human;
 import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Loafer;
 import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Student;
 import by.itstep.Korotkevich.javalessons.lesson22.model.entity.Worker;
