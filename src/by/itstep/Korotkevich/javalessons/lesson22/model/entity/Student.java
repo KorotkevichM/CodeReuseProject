@@ -6,6 +6,7 @@ public class Student extends Human{
     public static final int MAX_STUDENT_AGE = 65;
 
 
+
     private MarkNote note;
 
 
@@ -34,6 +35,13 @@ public class Student extends Human{
 //        this.alive = alive;
     }
 
+
+    public Student(String name, int age, MarkNote note, boolean alive) {
+        super(name, age, alive);
+
+        this.note = note;
+    }
+
 // copy-constructor
     public Student(Student student) {
         super();
@@ -60,6 +68,13 @@ public class Student extends Human{
     }
 
 
+    public MarkNote getNote() {
+        return note;
+    }
+
+    public void setNote(MarkNote note) {
+        this.note = note;
+    }
 
     public String getInfo() {
 
