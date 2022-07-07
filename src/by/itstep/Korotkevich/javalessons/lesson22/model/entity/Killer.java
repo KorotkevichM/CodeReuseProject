@@ -20,7 +20,7 @@ public class Killer {
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < humans.length; i++) {
-            builder.append(humans[i].toString()).append("\n");
+            builder.append(humans[i]).append("\n");
         }
         return builder + "";
     }
