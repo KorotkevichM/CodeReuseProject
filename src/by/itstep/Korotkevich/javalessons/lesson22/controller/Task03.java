@@ -15,9 +15,9 @@ public class Task03 {
         Worker worker = new Worker("Peter", 25, 3000, true);
         Loafer loafer = new Loafer("Nikolay", 40, 2, true);
 
-        System.out.println(student.getInfo());
-        System.out.println(worker.getInfo());
-        System.out.println(loafer.getInfo());
+//        System.out.println(student.getInfo());
+//        System.out.println(worker.getInfo());
+//        System.out.println(loafer.getInfo());
 
     }
 }

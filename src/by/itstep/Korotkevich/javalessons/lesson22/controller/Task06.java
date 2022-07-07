@@ -30,10 +30,10 @@ public class Task06 {
 
 
         Student student1 = new Student("Alex", 20, note, true);
-        System.out.println(student1.getInfo());
-
-        Student student2 = new Student("Alex", 20, note, true);
-        System.out.println(student2.getInfo());
+//        System.out.println(student1.getInfo());
+//
+//        Student student2 = new Student("Alex", 20, note, true);
+//        System.out.println(student2.getInfo());
 
 
     }

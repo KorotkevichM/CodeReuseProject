@@ -43,7 +43,7 @@ public class Human {
         this.alive = alive;
     }
 
-    public String getInfo(){
+    public String toString(){
         return name + ": age = " + age
                 + ", is alive = " + (alive ? "yes" : "no");
     }

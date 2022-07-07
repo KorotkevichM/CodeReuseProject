@@ -76,7 +76,7 @@ public class Student extends Human{
         this.note = note;
     }
 
-    public String getInfo() {
+    public String toString() {
 //
 ////        return getName() + ": age " + getAge()
 ////                + ", mark = " + mark
@@ -88,7 +88,7 @@ public class Student extends Human{
 ////
 ////                + ", mark = " + mark;
 //
-        return "Student - " + super.getInfo()
+        return "Student - " + super.toString()
                 + ", mark = " + note.getMark();
     }
 }
