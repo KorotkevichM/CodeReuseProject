@@ -1,29 +1,28 @@
 package by.itstep.Korotkevich.javalessons.lesson22.model.entity;
 
 public class Student extends Human{
-    public static final int MIN_MARK = 0;
-    public static final int MAX_MARK = 10;
+
     public static final int MIN_STUDENT_AGE = 16;
     public static final int MAX_STUDENT_AGE = 65;
 
 
-    private double mark = 4;
+    private MarkNote note;
 
 
     public Student() {
         super();
 
-        System.out.println("student default constr");
+//        System.out.println("student default constr");
 
         name = "no name";
         age = 16;
-        mark = 4;
+        note = new MarkNote();
         alive = true;
     }
 
     public Student(String name, int age, double mark, boolean alive) {
         super(name, age, alive);
-        System.out.println("student full constructor");
+//        System.out.println("student full constructor");
 
 //        setName(name);
 //        setAge(age);
@@ -31,17 +30,17 @@ public class Student extends Human{
 
 //        this.name = name;
 //        this.age = age;
-        this.mark = mark;
+        note = new MarkNote(mark);
 //        this.alive = alive;
     }
 
-
+// copy-constructor
     public Student(Student student) {
         super();
 
         name = student.name;
         age = student.age;
-        mark = student.mark;
+        note = new MarkNote(student.note.getMark());
         alive = student.alive;
     }
 
@@ -53,13 +52,11 @@ public class Student extends Human{
 //    }
 
     public double getMark() {
-        return mark;
+        return note.getMark();
     }
 
         public void setMark(double mark){
-        if (mark >= MIN_MARK && mark <= MAX_MARK){
-            this.mark = mark;
-        }
+        note.setMark(mark);
     }
 
 
@@ -77,7 +74,7 @@ public class Student extends Human{
 //                + ", mark = " + mark;
 
         return "Student - " + super.getInfo()
-                + ", mark = " + mark;
+                + ", mark = " + note.getMark();
 
     }
 }

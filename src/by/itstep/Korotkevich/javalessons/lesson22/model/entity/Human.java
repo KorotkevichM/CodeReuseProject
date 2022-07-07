@@ -11,11 +11,12 @@ public class Human {
     }
 
     public Human(String name, int age, boolean alive) {
+
+        System.out.println("human full constr");
         this.name = name;
         this.age = age;
         this.alive = alive;
     }
-
 
 
     public String getName() {
