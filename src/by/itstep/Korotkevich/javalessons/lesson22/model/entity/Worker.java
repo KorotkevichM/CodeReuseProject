@@ -35,12 +35,11 @@ public class Worker extends Human{
 
 
     public String getInfo() {
-//        return "Worker - " + getName() + ": age " + getAge()
-//                + ", salary = " + salary
-//                + ", is alive = " + (isAlive() ? "yes" : "no");
-
+////        return "Worker - " + getName() + ": age " + getAge()
+////                + ", salary = " + salary
+////                + ", is alive = " + (isAlive() ? "yes" : "no");
+//
         return "Worker - " + super.getInfo()
                 + ", salary = " + salary;
-
     }
 }

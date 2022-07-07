@@ -77,20 +77,19 @@ public class Student extends Human{
     }
 
     public String getInfo() {
-
-//        return getName() + ": age " + getAge()
-//                + ", mark = " + mark
-//                + ", is alive = " + (isAlive() ? "yes" : "no");
-
-//        return "Student - "
-//                + name + ": age " + age
-//                + ", is alive = " + (alive ? "yes" : "no")
 //
-//                + ", mark = " + mark;
-
+////        return getName() + ": age " + getAge()
+////                + ", mark = " + mark
+////                + ", is alive = " + (isAlive() ? "yes" : "no");
+//
+////        return "Student - "
+////                + name + ": age " + age
+////                + ", is alive = " + (alive ? "yes" : "no")
+////
+////                + ", mark = " + mark;
+//
         return "Student - " + super.getInfo()
                 + ", mark = " + note.getMark();
-
     }
 }
 

@@ -41,10 +41,10 @@ public class Loafer extends Human{
 
 
     public String getInfo() {
-//        return "Loafer - " + getName() + ": age " + getAge()
-//                + ", period of inactivity = " + inactivityPeriod
-//                + ", is alive = " + (isAlive() ? "yes" : "no");
-
+////        return "Loafer - " + getName() + ": age " + getAge()
+////                + ", period of inactivity = " + inactivityPeriod
+////                + ", is alive = " + (isAlive() ? "yes" : "no");
+//
         return "Loafer - " + super.getInfo()
                 + ", period of inactivity = " + inactivityPeriod;
     }

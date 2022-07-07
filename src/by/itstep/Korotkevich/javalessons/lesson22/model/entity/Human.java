@@ -7,12 +7,12 @@ public class Human {
     protected boolean alive;
 
     public Human() {
-        System.out.println("human default constr");
+//        System.out.println("human default constr");
     }
 
     public Human(String name, int age, boolean alive) {
 
-        System.out.println("human full constr");
+//        System.out.println("human full constr");
         this.name = name;
         this.age = age;
         this.alive = alive;
